@@ -1,0 +1,18 @@
+{
+  "firstName": "Bohdan",
+  "lastName": "Pasichnyk",
+  "languages": [
+    {
+      "title": "NodeJS",
+      "level": "Beginner"
+    },
+    {
+      "title": "C#",
+      "level": "Junior"
+    },
+    {
+      "title": "English",
+      "level": "Pro"
+    }
+  ]
+}
