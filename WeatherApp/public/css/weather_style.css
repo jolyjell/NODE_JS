@@ -1,0 +1,72 @@
+/* Основні стилі */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content_weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+.list-group-item a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #5050f3;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.list-group-item a:hover {
+    background-color: #ddd;
+}
+
+.weather_info {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.weather_info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #5050f3;
+}
+
+.weather_info img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.weather_info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.weather_info th,
+.weather_info td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.weather_info th {
+    background-color: #f2f2f2;
+}

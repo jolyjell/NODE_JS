@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main_style.css">
+</head>
+<body>
+<div class="container">
+    {{>header}}
+    <br>
+    <div class="main">
+        <div class="main_content">
+            <div class="text">Сервіс отримання даних про погоду</div>
+            <div class="button"></div>
+        </div>
+        {{#each cities}}
+            <div class="button"><a href="/weather/{{name}}">Погода в місті {{name}}, {{country}}</a></div>
+        {{/each}}
+    </div>
+</div>
+</body>
+</html>

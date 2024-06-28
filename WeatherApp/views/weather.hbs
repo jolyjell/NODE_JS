@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/weather_style.css">
+</head>
+<body>
+
+<div class="container">
+    {{>header}}
+    <br>
+    <div class="content_weather">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="/weather/London">London</a></li>
+            <li class="list-group-item"><a href="/weather/Zhytomyr">Zhytomyr</a></li>
+            <li class="list-group-item"><a href="/weather/Kyiv">Kyiv</a></li>
+        </ul>
+        <div class="weather_info">
+            <h3>Погода в місті {{city}}</h3>
+            <img src="https://openweathermap.org/img/wn/{{weather.weather.0.icon}}@2x.png" alt="">
+            <table>
+                <tr>
+                    <td>Тиск</td>
+                    <td>{{weather.main.pressure}} hPa</td>
+                </tr>
+                <tr>
+                    <td>Вологість</td>
+                    <td>{{weather.main.humidity}}%</td>
+                </tr>
+                <tr>
+                    <td>Температура</td>
+                    <td>{{weather.main.temp}} °C</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
